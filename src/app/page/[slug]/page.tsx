@@ -55,7 +55,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {product.image ? (
             <Image
               src={urlFor(product.image) || "/placeholder.jpg"}
-              alt={product.productName}
+              alt={product.productName || "image"}
               width={300}
               height={350}
               quality={75}
